@@ -1,0 +1,217 @@
+/* -------------------------------------------------------------- 
+-----------------------------------------------------------------
+
+	Definitions:	    Layout CSS
+	Last edited by:		Steffan Williams
+	Last edited on:		11/03/2010
+	
+	CONTENTS:
+	
+	1.  ==constants
+	2.  ==mixins
+	3.  ==general
+  4.  ==footer
+
+
+-----------------------------------------------------------------
+-------------------------------------------------------------- */
+
+
+/* 1. ==constants
+-------------------------------------------------------------- */
+
+@column_width: 28px;
+@column_margin: 12px;
+
+@one_col: (1 * @column_width) + ((1 - 1) * @column_margin);
+@two_col: (2 * @column_width) + ((2 - 1) * @column_margin);
+@three_col: (3 * @column_width) + ((3 - 1) * @column_margin);
+@four_col: (4 * @column_width) + ((4 - 1) * @column_margin);
+@five_col: (5 * @column_width) + ((5 - 1) * @column_margin);
+@six_col: (6 * @column_width) + ((6 - 1) * @column_margin);
+@seven_col: (7 * @column_width) + ((7 - 1) * @column_margin);
+@eight_col: (8 * @column_width) + ((8 - 1) * @column_margin);
+@nine_col: (9 * @column_width) + ((9 - 1) * @column_margin);
+@ten_col: (10 * @column_width) + ((10 - 1) * @column_margin);
+@eleven_col: (11 * @column_width) + ((11 - 1) * @column_margin);
+@twelve_col: (12 * @column_width) + ((12 - 1) * @column_margin);
+@thirteen_col: (13 * @column_width) + ((13 - 1) * @column_margin);
+@fourteen_col: (14 * @column_width) + ((14 - 1) * @column_margin);
+@fifteen_col: (15 * @column_width) + ((15 - 1) * @column_margin);
+@sixteen_col: (16 * @column_width) + ((16 - 1) * @column_margin);
+@seventeen_col: (17 * @column_width) + ((17 - 1) * @column_margin);
+@eighteen_col: (18 * @column_width) + ((18 - 1) * @column_margin);
+@nineteen_col: (19 * @column_width) + ((19 - 1) * @column_margin);
+@twenty_col: (20 * @column_width) + ((20 - 1) * @column_margin);
+@twenty_one_col: (21 * @column_width) + ((21 - 1) * @column_margin);
+@twenty_two_col: (22 * @column_width) + ((22 - 1) * @column_margin);
+@twenty_three_col: (23 * @column_width) + ((23 - 1) * @column_margin);
+@twenty_four_col: (24 * @column_width) + ((24 - 1) * @column_margin);
+
+
+/* 2. ==mixins
+-------------------------------------------------------------- */
+.column_width (@column_number: 1) {
+  width: (@column_number * @column_width) + ((@column_number - 1) * @column_margin);
+}
+
+.prefix_width (@column_number: 1) {
+  margin-left: (@column_number * @column_width) + (@column_number * @column_margin);
+}
+
+.suffix_width (@column_number: 1) {
+  margin-right: (@column_number * @column_width) + ((@column_number + 1) * @column_margin);
+}
+
+/* 3. ==general
+-------------------------------------------------------------- */
+
+body {
+  color: #333;
+  font: 16px/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.wrapper {      
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  width: 972px;
+}
+
+.inner-wrapper {          
+  clear: left;
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0 12px;
+  position: relative;
+  width: 948px;
+}
+
+.container {
+  display: inline;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+
+.one-col, .two-col, .three-col, .four-col, .five-col, .six-col, .seven-col, .eight-col, .nine-col, .ten-col, .eleven-col, .twelve-col, .thirteen-col, .fourteen-col, .fifteen-col, .sixteen-col, .seventeen-col, .eighteen-col, .nineteen-col, .twenty-col, .twenty-one-col, .twenty-two-col, .twenty-three-col, .twenty-four-col {
+  display: inline;
+  float: left;
+  margin-right: 12px;
+}
+
+.one-col { .column_width; }
+.two-col { .column_width(2); }
+.three-col { .column_width(3); }
+.four-col { .column_width(4); }
+.five-col { .column_width(5); }
+.six-col { .column_width(6); }
+.seven-col { .column_width(7); }
+.eight-col { .column_width(8); }
+.nine-col { .column_width(9); }
+.ten-col { .column_width(10); }
+.eleven-col { .column_width(11); }
+.twelve-col { .column_width(12); }
+.thirteen-col { .column_width(13); } 
+.fourteen-col { .column_width(14); } 
+.fifteen-col { .column_width(15); } 
+.sixteen-col { .column_width(16); } 
+.seventeen-col { .column_width(17); } 
+.eighteen-col { .column_width(18); } 
+.nineteen-col { .column_width(19); } 
+.twenty-col { .column_width(20); } 
+.twenty-one-col { .column_width(21); } 
+.twenty-two-col { .column_width(22); } 
+.twenty-three-col { .column_width(23); } 
+.twenty-four-col { .column_width(24); margin-right: 0; }
+
+.prefix-one { .prefix_width; }
+.prefix-two { .prefix_width(2); }
+.prefix-three { .prefix_width(3); }
+.prefix-four { .prefix_width(4); }
+.prefix-five { .prefix_width(5); }
+.prefix-six { .prefix_width(6); }
+.prefix-seven { .prefix_width(7); }
+.prefix-eight { .prefix_width(8); }
+.prefix-nine { .prefix_width(9); }
+.prefix-ten { .prefix_width(10); }
+.prefix-eleven { .prefix_width(11); }
+.prefix-twelve { .prefix_width(12); }
+.prefix-thirteen { .prefix_width(13); } 
+.prefix-fourteen { .prefix_width(14); } 
+.prefix-fifteen { .prefix_width(15); } 
+.prefix-sixteen { .prefix_width(16); } 
+.prefix-seventeen { .prefix_width(17); } 
+.prefix-eighteen { .prefix_width(18); } 
+.prefix-nineteen { .prefix_width(19); } 
+.prefix-twenty { .prefix_width(20); } 
+.prefix-twenty-one { .prefix_width(21); } 
+.prefix-twenty-two { .prefix_width(22); } 
+.prefix-twenty-three { .prefix_width(23); } 
+
+.suffix-one { .suffix_width; }
+.suffix-two { .suffix_width(2); }
+.suffix-three { .suffix_width(3); }
+.suffix-four { .suffix_width(4); }
+.suffix-five { .suffix_width(5); }
+.suffix-six { .suffix_width(6); }
+.suffix-seven { .suffix_width(7); }
+.suffix-eight { .suffix_width(8); }
+.suffix-nine { .suffix_width(9); }
+.suffix-ten { .suffix_width(10); }
+.suffix-eleven { .suffix_width(11); }
+.suffix-twelve { .suffix_width(12); }
+.suffix-thirteen { .suffix_width(13); } 
+.suffix-fourteen { .suffix_width(14); } 
+.suffix-fifteen { .suffix_width(15); } 
+.suffix-sixteen { .suffix_width(16); } 
+.suffix-seventeen { .suffix_width(17); } 
+.suffix-eighteen { .suffix_width(18); } 
+.suffix-nineteen { .suffix_width(19); } 
+.suffix-twenty { .suffix_width(20); } 
+.suffix-twenty-one { .suffix_width(21); } 
+.suffix-twenty-two { .suffix_width(22); } 
+.suffix-twenty-three { .suffix_width(23); } 
+
+.last-col, .one-col .one-col, .two-col .two-col, .three-col .three-col, .four-col .four-col, .five-col .five-col, .six-col .six-col, .seven-col .seven-col, .eight-col .eight-col, .nine-col .nine-col, .ten-col .ten-col, .eleven-col .eleven-col, .twelve-col .twelve-col, .thirteen-col .thirteen-col, .fourteen-col .fourteen-col, .fifteen-col .fifteen-col, .sixteen-col .sixteen-col, .seventeen-col .seventeen-col, .eighteen-col .eighteen-col, .nineteen-col .nineteen-col, .twenty-col .twenty-col, .twenty-one-col .twenty-one-col, .twenty-two-col .twenty-two-col, .twenty-three-col .twenty-three-col, .twenty-four-col .twenty-four-col, .twenty-four-col { margin-right: 0; }
+.left { float: left; }
+.right { float: right; }
+.no-margin { margin: 0; }
+.accessibility-aid, .off-left {
+  position: absolute;
+  left: -999em;  
+}
+
+.twenty-four-col .twenty-four-col,
+.twenty-three-col .twenty-three-col,
+.twenty-two-col .twenty-two-col,
+.twenty-one-col .twenty-one-col,
+.twenty-col .twenty-col,
+.nineteen-col .nineteen-col,
+.eighteen-col .eighteen-col,
+.seventeen-col .seventeen-col,
+.sixteen-col .sixteen-col,
+.fifteen-col .fifteen-col,
+.fourteen-col .fourteen-col,
+.thirteen-col .thirteen-col,
+.twelve-col .twelve-col,
+.eleven-col .eleven-col,
+.ten-col .ten-col,
+.nine-col .nine-col,
+.eight-col .eight-col,
+.seven-col .seven-col,
+.six-col .six-col,
+.five-col .five-col,
+.four-col .four-col,
+.three-col .three-col,
+.two-col .two-col,
+.one-col .one-col {
+  margin-right:0;
+}
+

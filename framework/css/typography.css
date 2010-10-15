@@ -1,0 +1,373 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+}
+strong { font-weight: bold; }
+p, ul, ol {
+  margin: 0 0 24px;
+  line-height: 24px;
+  font-size: 16px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 24px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0 0 24px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 48px;
+  margin: 0 0 24px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 24px;
+}
+h4 { font-size: 18px; }
+h1, h2, h3, h4 { font-weight: bold; }
+em { font-style: italic; }
+strong { font-style: bold; }
+.off-left, .accessibility-aid {
+  position: absolute;
+  left: -9999em;
+}
+.image-replaced {
+  text-align: left;
+  text-indent: -999em;
+}
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+.inline { display: inline; }
+.block { display: block; }
+.inline li { display: inline; }
+.inline-items li { display: inline; }
+legend.hidden { display: none; }
+.caps { text-transform: uppercase; }
+.fourteen-col {
+  font-size: 16px;
+  line-height: 24px;
+}
+.fourteen-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.fourteen-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fourteen-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fourteen-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fourteen-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fourteen-col p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.fourteen-col p + p { margin-bottom: 8px; }
+.fourteen-col p:last-child { margin-bottom: 0; }
+.fifteen-col {
+  font-size: 16px;
+  line-height: 24px;
+}
+.fifteen-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.fifteen-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fifteen-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fifteen-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fifteen-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.fifteen-col p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.fifteen-col p + p { margin-bottom: 8px; }
+.fifteen-col p:last-child { margin-bottom: 0; }
+.sixteen-col {
+  font-size: 16px;
+  line-height: 24px;
+}
+.sixteen-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.sixteen-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.sixteen-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.sixteen-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.sixteen-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.sixteen-col p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.sixteen-col p + p { margin-bottom: 8px; }
+.sixteen-col p:last-child { margin-bottom: 0; }
+.six-col {
+  font-size: 14px;
+  line-height: 20px;
+}
+.six-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.six-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.six-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.six-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.six-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.six-col p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 9px;
+}
+.six-col p:last-child { margin-bottom: 0; }
+.seven-col {
+  font-size: 14px;
+  line-height: 20px;
+}
+.seven-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.seven-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.seven-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.seven-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.seven-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.seven-col p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 9px;
+}
+.seven-col p:last-child { margin-bottom: 0; }
+.eight-col {
+  font-size: 14px;
+  line-height: 20px;
+}
+.eight-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.eight-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.eight-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.eight-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.eight-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.eight-col p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 9px;
+}
+.eight-col p:last-child { margin-bottom: 0; }
+.ten-col {
+  font-size: 14px;
+  line-height: 20px;
+}
+.ten-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.ten-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.ten-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.ten-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.ten-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.ten-col p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 9px;
+}
+.ten-col p:last-child { margin-bottom: 0; }
+.twelve-col {
+  font-size: 14px;
+  line-height: 20px;
+}
+.twelve-col h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+.twelve-col h2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.twelve-col h3 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.twelve-col h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.twelve-col h5 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+.twelve-col p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 9px;
+}
+.twelve-col p:last-child { margin-bottom: 0; }
+.four-col {
+  font-size: 14px;
+  line-height: 18px;
+}
+.four-col h1 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 4px;
+}
+.four-col h2 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 4px;
+}
+.four-col h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 4px;
+}
+.four-col h4 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 4px;
+}
+.four-col h5 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 4px;
+}
+.four-col p {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 4px;
+}
+.four-col p:last-child { margin-bottom: 0; }

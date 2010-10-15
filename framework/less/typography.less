@@ -1,0 +1,228 @@
+@base: 16px;
+@line_height: (@base * 1.5);
+/*
+ 18px = @base * 1.12500;
+ 24px = @base * 1.5;
+ 30px = @base * 1.87500;
+ 36px = @base * 2.25; 
+*/
+ 
+body {
+	font-size: @base;
+	line-height: 24px;
+}
+
+strong {
+ font-weight: bold;
+}
+
+p, ul, ol {
+	margin: 0 0 24px;
+	line-height: 24px;
+	font-size: @base;
+}
+
+ul {
+ list-style-type: disc;
+ padding-left: 24px;
+}
+
+ol {
+ list-style-type:  decimal;
+ padding-left: 24px;
+}
+
+h1 {
+	font-size: @base * 2.25;
+	line-height:48px;
+	margin: 0 0 24px;
+}
+
+h2 {
+	font-size: @base * 1.87500;
+	line-height: 48px;
+	margin: 0 0 24px;
+}
+
+h3 {
+	font-size: @base * 1.5;
+	line-height:24px;
+	margin: 0 0 24px;
+}
+
+h4 {
+	font-size: @base * 1.12500;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-style: bold;
+}
+
+.off-left,
+.accessibility-aid {
+  position: absolute;
+  left: -9999em;
+}
+
+.image-replaced {
+	text-align: left;
+	text-indent: -999em;
+}
+
+.no-bullets {
+ list-style: none;
+ padding-left: 0;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline li, .inline-items li {
+ display: inline;
+}
+
+legend.hidden {
+  display:none;
+}
+
+/* Textile Classes */
+.caps {
+	text-transform: uppercase;
+}
+
+/* ==Typography
+
+   This is an enhanced version of the Lorem typography, that
+   will be rolled back in once Book Fairs has been tried and
+   tested.
+-------------------------------------------------------------- */
+
+
+/* Default fourteen, fifteen and sixteen column styling. */
+.fourteen-col, .fifteen-col, .sixteen-col {
+  font-size: 16px;
+  line-height: 24px;
+      
+  /* 
+    The following CSS applies a 12px 'gap' between a heading
+    and a paragraph and between two paragraphs.
+    
+    <h1>Some title</h1> — line height of 20px gives 2px above and below, margin-bottom of 8 makes this 10px in total
+    <p>Some text</p>    — line height of 18px gives 2px above and below, plus the 10px from the heading, creating
+                          a 12px gap between the heading and a paragraph.
+    
+  */
+  
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 20px;  
+  }
+  
+  h2, h3, h4, h5 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 8px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 20px;     /* A standard margin, (24 - 16) / 2 == 4 + 20 == 24 spacing. */
+  }
+  
+  p + p {
+    margin-bottom: 8px;
+  }
+  
+  p:last-child {
+  	margin-bottom: 0;
+  }  
+}
+
+/* Default six, ten and twelve column styling. */
+.six-col, .seven-col, .eight-col, .ten-col, .twelve-col {
+  
+  font-size: 14px;
+  line-height: 20px;  
+  
+  /* 
+    The following CSS applies a 12px 'gap' between a heading
+    and a paragraph and between two paragraphs.
+    
+    <h1>Some title</h1> — line height of 20px gives 2px above and below, margin-bottom of 8 makes this 10px in total
+    <p>Some text</p>    — line height of 18px gives 2px above and below, plus the 10px from the heading, creating
+                          a 12px gap between the heading and a paragraph.
+    
+  */
+  
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 20px;  
+  }
+  
+  h2, h3, h4, h5 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 8px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 9px;
+  }
+  
+  p:last-child {
+  	margin-bottom: 0;
+  }
+  
+}
+
+/* Default four column styling. */
+.four-col {
+  
+  font-size: 14px;
+  line-height: 18px;
+  
+  /* 
+    The following CSS applies a 12px 'gap' between a heading
+    and a paragraph and between two paragraphs.
+    
+    <h1>Some title</h1> — line height of 20px gives 2px above and below, margin-bottom of 8 makes this 10px in total
+    <p>Some text</p>    — line height of 18px gives 2px above and below, plus the 10px from the heading, creating
+                          a 12px gap between the heading and a paragraph.
+    
+  */
+  
+  h1, h2, h3, h4, h5 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 4px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 4px;
+  }
+  
+  p:last-child {
+  	margin-bottom: 0;
+  }  
+}
+
